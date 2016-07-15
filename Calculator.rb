@@ -2,20 +2,20 @@ def get_int_values
   [gets, gets].map{ |s| s.chomp.to_i }
 end
 
-puts "Would you like to [add], [multiply], or [subtract]?"
-response = gets.chomp
+puts "Do you want to [add], [multiply], or [subtract]?"
+choice = gets.chomp
 
-case response.downcase
+case choice.downcase
 when 'add'
-  puts "Which numbers would you like to add?"
+  puts "Please enter the numbers you wish to add"
   operator = :+
 
 when 'subtract'
-  puts "Which numbers would you like to subtract?"
+  puts "Please enter the numbers you want to subtract"
   operator = :-
 
 when 'multiply'
-  puts "Which numbers would you like to multiply?"
+  puts "Please enter the numbers you want to multiply"
   operator = :*
 
 end
